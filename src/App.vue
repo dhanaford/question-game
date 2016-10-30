@@ -1,64 +1,105 @@
 <template>
-  <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
-  </div>
+    <div id="app">
+        <div class="container-fluid container-main">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>The Current Question!</h1>
+                    <div class="container">
+                        <p>{{ singleQuestion }}</p>
+                    </div>
+                    <button class="btn btn-primary" @click="nextQuestion()">Generate New Question</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  components: {
-    Hello
-  }
+    'data' () {
+        return {
+            playerOne: false,
+            playerTwo: false,
+            currentQuestion: 0,
+            questions: [],
+            singleQuestion: ''
+        }
+    },
+    'events': {
+        'hook:ready': function () {
+            this.$http.get('../static/questions.json').then((response) => {
+                var questions = response.data
+                var currentIndex = questions.length
+                var temporaryValue
+                var randomIndex
+                // var singleQuestion
+                while (currentIndex !== 0) {
+                    // singleQuestion = questions[i].body
+                    randomIndex = Math.floor(Math.random() * currentIndex)
+                    currentIndex -= 1
+                    temporaryValue = questions[currentIndex]
+                    questions[currentIndex] = questions[randomIndex]
+                    questions[randomIndex] = temporaryValue
+                }
+                this.$set('questions', questions)
+            })
+        }
+    },
+    'methods': {
+        'nextQuestion': function () {
+            this.singleQuestion = this.questions.shift().body
+        }
+    }
 }
 </script>
 
-<style>
+<style lang="scss">
+
 html {
-  height: 100%;
+    height: 100%;
+    font-size: 16px;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+    background-color: #42413d;
+    color: #b2afac;
+    font-size: 62.5%;
 }
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
+h1 {
+    font-size: 2.5rem;
 }
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
+p {
+    font-size: 1rem;
+    color: white;
 }
 
-.logo {
-  width: 100px;
-  height: 100px
+.container-main {
+    margin-top: 20%;
+    text-align: center;
 }
+
+.container {
+    margin: auto;
+    width: 30rem;
+    padding: 15px;
+}
+
+.btn-primary {
+    background-color: #ffce2b;
+    color: white;
+    border: 1px solid #e6b000;
+}
+
+.btn-primary:hover,
+.btn-pimary:active,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:link {
+    background-color: #b38900;
+    color: white;
+    border: 1px solid #e6b000;
+}
+
 </style>
