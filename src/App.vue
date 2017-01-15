@@ -11,43 +11,44 @@
             <p>As long as each person has their own time to have a turn to give there answer without interruption.</p>
             <form class="form-inline category">
               <p>Pick a category below to get started:</p>
-              <input v-model="state.chosenCategory" value="silly" class="form-control" type="radio"></input>
-              <label>Silly</label>
-              <input v-model="state.chosenCategory" value="deep" class="form-control" type="radio"></input>
-              <label>Deep</label>
-              <input v-model="state.chosenCategory" value="hypothetical" class="form-control" type="radio"></input>
-              <label>Hypothetical</label>
-              <input v-model="state.chosenCategory" value="absurd" class="form-control" type="radio"></input>
-              <label>Absurd</label>
+              <select :value="state.chosenCategory" v-model="state.chosenCategory" class="form-control">
+                <option v-for="category in content.categories">{{category}}</option>
+              </select>
             </form>
             <div class="btn-container">
               <button @click="startGame()" class="btn btn-pimary">Get Started</button>
             </div>
           </div>
         </div>
-        <div class="container-fluid container-main">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>The Current Question!</h1>
-                    <div class="container">
-                        <p>{{ state.singleQuestion }}</p>
-                    </div>
-                    <button class="btn btn-primary" @click="nextQuestion()">Generate New Question</button>
-                </div>
+        <div class="container-main">
+            <div class="flex">
+              <p>{{ state.singleQuestion }}</p>
+              <button class="btn btn-primary" @click="nextQuestion()">Next Question</button>
+              <label>Change Category</label>
+              <select @change="changeCategory()" v-model="state.chosenCategory" class="form-control">
+                <option v-for="category in content.categories">{{category}}</option>
+              </select>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
     'data' () {
         return {
             'state': {
                 'showSplash': true,
                 'questions': [],
+                'categorized': [],
                 'singleQuestion': '',
-                'chosenCategory': ''
+                'chosenCategory': 'Select a category',
+                'changedCategory': 'Change Category'
+            },
+            'content': {
+                'categories': ['icebreaker', 'deep', 'hypothetical', 'relationships']
             }
         }
     },
@@ -58,9 +59,8 @@ export default {
                 var currentIndex = questions.length
                 var temporaryValue
                 var randomIndex
-                // var singleQuestion
+                // randomize questions.json
                 while (currentIndex !== 0) {
-                    // singleQuestion = questions[i].body
                     randomIndex = Math.floor(Math.random() * currentIndex)
                     currentIndex -= 1
                     temporaryValue = questions[currentIndex]
@@ -73,20 +73,24 @@ export default {
     },
     'methods': {
         'startGame': function () {
-            var chosenCategory = this.state.chosenCategory
-            if (chosenCategory === 'silly') {
-                console.log('silly')
-            } else if (chosenCategory === 'deep') {
-                console.log('deep')
-            } else if (chosenCategory === 'hypothetical') {
-                console.log('hypothetical')
-            } else if (chosenCategory === 'absurd') {
-                console.log('absurd')
-            }
+            this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+            this.$set('state.categorized', this.state.categorized)
+            this.state.singleQuestion = this.state.categorized[0].body
             this.state.showSplash = false
         },
+        'changeCategory': function () {
+            this.state.chosenCategory = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+            this.$set('state.categorized', this.state.chosenCategory)
+            this.state.singleQuestion = this.state.categorized[0].body
+        },
         'nextQuestion': function () {
-            this.state.singleQuestion = this.state.questions.shift().body
+            this.state.singleQuestion = this.state.categorized.shift().body
+        }
+    },
+    'computed': {
+        'findCategories': function () {
+            var test = _.find(this.state.questions, { 'category': this.state.chosenCategory })
+            return test
         }
     }
 }
@@ -115,13 +119,18 @@ p {
 }
 
 .container-main {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.container {
-    margin: auto;
-    width: 30rem;
-    padding: 15px;
+.flex {
+  text-align: center;
+  padding: 2em;
+  margin: auto;
+  width: 60%;
+  min-width: 300px;
 }
 
 .btn-primary {
