@@ -7,13 +7,10 @@
               <p>There are no rules. As long as everyone gets an uninterrupted chance to answer the question, then this game can be rewarding and fun way to open up and learn about one and ither.</p>
             <form class="form-inline category">
               <p><b>Pick a category below to get started!</b></p>
-              <select :value="state.chosenCategory" v-model="state.chosenCategory" class="form-control">
+              <select @change="startGame()" :value="state.chosenCategory" v-model="state.chosenCategory" class="form-control">
                 <option v-for="category in content.categories">{{category}}</option>
               </select>
             </form>
-            <div class="btn-container">
-              <button @click="startGame()" class="btn btn-pimary">Generate!</button>
-            </div>
           </div>
         </div>
         <div v-if="state.showSplash === false" class="flex">
@@ -52,7 +49,7 @@ export default {
                 'currentCategory': ''
             },
             'content': {
-                'categories': ['icebreaker', 'deep', 'hypothetical', 'relationships']
+                'categories': ['all', 'icebreaker', 'thought provoking', 'hypothetical', 'relationships']
             }
         }
     },
@@ -77,6 +74,9 @@ export default {
     },
     'methods': {
         'startGame': function () {
+            if (this.state.chosenCategory === 'all') {
+                console.log('test')
+            }
             this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
             this.$set('state.categorized', this.state.categorized)
             this.state.singleQuestion = this.state.categorized.body
