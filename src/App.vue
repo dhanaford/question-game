@@ -24,12 +24,15 @@
                 <button class="btn btn-primary" @click="nextQuestion()">Generate Question</button>
                 <br />
                 <br />
-                <label>Change Category</label>
-                <select @change="changeCategory()" v-model="state.chosenCategory" class="form-control form-control-sm category">
-                  <option v-for="category in content.categories">{{category}}</option>
-                </select>
                 <div class="category-chooser">
-                  <p>Current category: <span>{{state.currentCategory}}</span></p>
+                  <p>Current category:
+                      <select @change="changeCategory()" v-model="state.chosenCategory">
+                          {{state.currentCategory}}
+                          <option v-for="category in content.categories">
+                              {{category}}
+                          </option>
+                      </select>
+                  </p>
                 </div>
             </div>
         </div>
@@ -52,14 +55,16 @@ export default {
                 'currentCategory': ''
             },
             'content': {
-                'categories': ['icebreaker', 'deep', 'hypothetical', 'relationships']
+                'categories': ['all', 'icebreaker', 'deep', 'hypothetical', 'relationships']
             }
         }
     },
     'events': {
         'hook:ready': function () {
-            this.$http.get('//converstion-generator-questions.s3-website-us-east-1.amazonaws.com/questions.json').then((response) => {
-                var questions = JSON.parse(response.data)
+            // this.$http.get('//converstion-generator-questions.s3-website-us-east-1.amazonaws.com/questions.json').then((response) => {
+            this.$http.get('../static/questions.json').then((response) => {
+                // var questions = JSON.parse(response.data)
+                var questions = response.data
                 var currentIndex = questions.length
                 var temporaryValue
                 var randomIndex
@@ -71,23 +76,29 @@ export default {
                     questions[currentIndex] = questions[randomIndex]
                     questions[randomIndex] = temporaryValue
                 }
-                this.$set('state.questions', questions)
+                this.state.questions = questions
             })
         }
     },
     'methods': {
         'startGame': function () {
-            this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
-            this.$set('state.categorized', this.state.categorized)
-            this.state.singleQuestion = this.state.categorized.body
-            this.state.currentCategory = this.state.categorized[0].category
+            if (this.state.chosenCategory === 'all') {
+                this.state.categorized = this.state.questions
+            } else {
+                this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+                this.state.currentCategory = this.state.categorized[0].category
+                this.state.singleQuestion = this.state.categorized.body
+            }
             this.state.showSplash = false
         },
         'changeCategory': function () {
-            this.state.chosenCategory = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
-            this.$set('state.categorized', this.state.chosenCategory)
-            this.state.singleQuestion = this.state.categorized.body
-            this.state.currentCategory = this.state.categorized[0].category
+            if (this.state.chosenCategory === 'all') {
+                this.state.categorized = this.state.questions
+            } else {
+                this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+                this.state.currentCategory = this.state.categorized[0].category
+                this.state.singleQuestion = this.state.categorized.body
+            }
         },
         'nextQuestion': function () {
             this.state.singleQuestion = this.state.categorized.shift().body
@@ -148,7 +159,7 @@ p {
     top: 87px;
     left: 12px;
   }
-  span {
+  span, select  {
     font-weight: bold;
     color: #6BAB03;
   }
