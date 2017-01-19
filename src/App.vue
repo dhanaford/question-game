@@ -1,39 +1,63 @@
 <template>
     <div id="app">
       <div class="container-main">
-        <div v-if="state.showSplash" class="flex">
+        <div v-if="state.showSplash" class="flex-main">
           <div class="content-wrapper instruction-dialog">
-              <p><b>Generate some randomized question based on a category of your choosing or just generate a completely random question.</b> People love having good quality conversation and laughter. People also like staring at the computer screens and smart phones all day long. Why not combine both!</p>
-              <p>There are no rules. As long as everyone gets an uninterrupted chance to answer the question, then this game can be rewarding and fun way to open up and learn about one and ither.</p>
-            <form class="form-inline category">
-              <p><b>Pick a category below to get started!</b></p>
-              <select :value="state.chosenCategory" v-model="state.chosenCategory" class="form-control">
-                <option v-for="category in content.categories">{{category}}</option>
-              </select>
-            </form>
-            <div class="btn-container">
-              <button @click="startGame()" class="btn btn-pimary">Generate!</button>
+              <h4>In need of some good ol’ fashion conversation? <br /><b>Well look no further!</b></h4>
+                <p>Generate questions at random to spark interesting conversation.</p>
+                  <ul>
+                    <li>Take turns answering a randomly generated question</li>
+                    <li>Actually listen to each other before the next person answers</li>
+                    <li>Build relationships</li>
+                    <li>Break the Ice</li>
+                    <li>Practice the art of listening as well as speaking</li>
+                  </ul>
+                <p>Take a quick glance at the app during awkward social situations, first dates, or if you just plain lack the wit to think of anything interesting on your own :)</p>
+                <div class="category-chooser category-chooser__main">
+                  <p>Current category:
+                      <select @change="changeCategory()" v-model="state.chosenCategory">
+                          {{state.currentCategory}}
+                          <option v-for="category in content.categories">
+                              {{category}}
+                          </option>
+                      </select>
+                  </p>
+                </div>
+                <div class="btn-container">
+
+              <button @click="startGame()" class="btn btn-primary btn-primary__main">Begin!</button>
             </div>
           </div>
         </div>
-        <div v-if="state.showSplash === false" class="flex">
-              <div class="content-wrapper">
-                <div class="question">
-                  <p>{{ state.singleQuestion }}</p>
-                </div>
-                <button class="btn btn-primary" @click="nextQuestion()">Generate Question</button>
-                <br />
-                <br />
-                <label>Change Category</label>
-                <select @change="changeCategory()" v-model="state.chosenCategory" class="form-control form-control-sm category">
-                  <option v-for="category in content.categories">{{category}}</option>
-                </select>
-                <div class="category-chooser">
-                  <p>Current category: <span>{{state.currentCategory}}</span></p>
-                </div>
+        <div v-if="state.showSplash === false" class="flex-main">
+            <div class="content-wrapper content-wrapper__second">
+              <div class="question">
+                <p>{{ state.singleQuestion }}</p>
+              </div>
+              <button class="btn btn-primary" @click="nextQuestion()">Generate Question</button>
+              <div class="category-chooser">
+                <p>Current category:
+                    <select @change="changeCategory()" v-model="state.chosenCategory">
+                        {{state.currentCategory}}
+                        <option v-for="category in content.categories">
+                            {{category}}
+                        </option>
+                    </select>
+                </p>
+              </div>
+              <div class="back-to-intro"><a href="" @click.prevent="backToIntro()">Back to intro</a></div>
             </div>
         </div>
     </div>
+    <footer>
+      <div class="row">
+        <div class="col-xs-6 pull-left">
+          <p>The Conversation Generator V 1.0.0-alpha</p>
+        </div>
+        <div class="col-xs-6 pull-right">
+          <p class="copyright"><span>©</span> David Hanaford 2017</p>
+      </div>
+    </footer>
 </template>
 
 <script>
@@ -47,19 +71,21 @@ export default {
                 'questions': [],
                 'categorized': [],
                 'singleQuestion': '',
-                'chosenCategory': 'Select a category',
+                'chosenCategory': 'all',
                 'changedCategory': 'Change Category',
                 'currentCategory': ''
             },
             'content': {
-                'categories': ['icebreaker', 'deep', 'hypothetical', 'relationships']
+                'categories': ['all', 'icebreaker', 'deep', 'hypothetical', 'relationships']
             }
         }
     },
     'events': {
         'hook:ready': function () {
-            this.$http.get('//converstion-generator-questions.s3-website-us-east-1.amazonaws.com/questions.json').then((response) => {
-                var questions = JSON.parse(response.data)
+            // this.$http.get('//converstion-generator-questions.s3-website-us-east-1.amazonaws.com/questions.json').then((response) => {
+            this.$http.get('../static/questions.json').then((response) => {
+                // var questions = JSON.parse(response.data)
+                var questions = response.data
                 var currentIndex = questions.length
                 var temporaryValue
                 var randomIndex
@@ -71,32 +97,48 @@ export default {
                     questions[currentIndex] = questions[randomIndex]
                     questions[randomIndex] = temporaryValue
                 }
-                this.$set('state.questions', questions)
+                this.state.questions = questions
             })
         }
     },
     'methods': {
         'startGame': function () {
-            this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
-            this.$set('state.categorized', this.state.categorized)
-            this.state.singleQuestion = this.state.categorized.body
-            this.state.currentCategory = this.state.categorized[0].category
+            if (this.state.chosenCategory === 'all') {
+                this.state.categorized = this.state.questions
+            } else {
+                this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+                this.state.currentCategory = this.state.categorized[0].category
+                this.state.singleQuestion = this.state.categorized.body
+            }
             this.state.showSplash = false
         },
         'changeCategory': function () {
-            this.state.chosenCategory = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
-            this.$set('state.categorized', this.state.chosenCategory)
-            this.state.singleQuestion = this.state.categorized.body
-            this.state.currentCategory = this.state.categorized[0].category
+            if (this.state.chosenCategory === 'all') {
+                this.state.categorized = this.state.questions
+            } else {
+                this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
+                this.state.currentCategory = this.state.categorized[0].category
+                this.state.singleQuestion = this.state.categorized.body
+            }
         },
         'nextQuestion': function () {
             this.state.singleQuestion = this.state.categorized.shift().body
+        },
+        'backToIntro': function () {
+            this.state.showSplash = true
         }
     }
 }
 </script>
 
 <style lang="scss">
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 html {
     height: 100%;
@@ -107,6 +149,29 @@ body {
     background-color: #F9CA00;
     color: #b2afac;
     font-size: 62.5%;
+}
+
+a {
+  color: #6BAB03;
+}
+
+ul {
+  text-align: left;
+  color: #444;
+  font-size: 1.3em;
+}
+
+a:hover {
+  color: #81C612;
+}
+
+button {
+}
+
+button:focus {
+  outline: 2px solid #6BAB03 !important;
+  background-color: transparent !important;
+  color: #444 !important;
 }
 
 h1 {
@@ -129,6 +194,16 @@ p {
     color: black;
 }
 
+select  {
+  font-weight: bold;
+  color: #6BAB03;
+  background-color: transparent !important;
+  &:hover {
+    border: 1px solid #81C612;
+    cursor: pointer;
+  }
+}
+
 .question {
   min-height: 90px;
   p {
@@ -138,8 +213,10 @@ p {
   }
 }
 .category-chooser {
-  text-transform: capitalize;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  margin-left: 8px;
+  margin-top: 35px;
   p {
     color: #444;
     text-transform: uppercase;
@@ -148,10 +225,6 @@ p {
     top: 87px;
     left: 12px;
   }
-  span {
-    font-weight: bold;
-    color: #6BAB03;
-  }
 }
 
 .container-main {
@@ -159,11 +232,9 @@ p {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  padding-top: 5%;
 }
 
-.flex {
-  text-align: center;
+.flex-main {
   margin: auto;
   width: 100%;
   -webkit-box-align: center;
@@ -179,15 +250,33 @@ p {
   margin-top: 159px;
   width: 41rem;
   margin: auto;
-  padding-top: 9rem;
+  padding-top: 10rem;
   padding-right: 5rem;
+  max-height: 328px;
 }
 
+.content-wrapper__second {
+  text-align: center;
+}
+
+.category-chooser__main {
+  margin-top: -61px;
+  margin-left: 30px;
+}
+
+
 .btn-primary {
-    background-color: #24aadd;
-    color: white;
-    border: 1px solid #0D8BBB;
-    border-radius: 0px;
+  background-color: transparent;
+  color: #444;
+  border: 2px solid #6BAB03;
+  border-radius: 0px;
+  padding: .75em 1.5em;
+  font-size: 2em;
+  letter-spacing: 1.5px;
+}
+
+.btn-primary__main {
+  border: 2px solid #0BBCDF;
 }
 
 .btn-primary:hover,
@@ -195,9 +284,9 @@ p {
 .btn-primary:focus,
 .btn-primary:visited,
 .btn-primary:link {
-    background-color: #56D1FF;
-    color: white;
-    border: 1px solid #0D8BBB;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #81C612;
 }
 
 .splash-screen {
@@ -224,12 +313,11 @@ select.category {
 
 .btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   button {
-    margin-top: 1em;
-    background-color: #24aadd;
-    color: white;
-    border: 1px solid #0D8BBB;
+    margin-top: 1.3em;
+    padding: .5em 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -251,6 +339,29 @@ form.category {
   label {
     padding-left: .1em;
     padding-right: 1em;
+  }
+}
+
+.back-to-intro {
+  position: absolute;
+  margin-left: 730px;
+  padding-top: 2px;
+  a {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+}
+
+footer {
+  background-color: #444;
+  padding: 1em;
+  p {
+    color: #6BAB03;
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  p.copyright {
+    text-align: right;
   }
 }
 
