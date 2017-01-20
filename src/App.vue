@@ -3,8 +3,9 @@
       <div class="container-main">
         <div v-if="state.showSplash" class="flex-main">
           <div class="content-wrapper instruction-dialog">
-              <h4>In need of some good ol’ fashion conversation? <br /><b>Well look no further!</b></h4>
-                <p>Generate questions at random to spark interesting conversation.</p>
+              <h3>In need of some good ol’ fashion conversation?</h3>
+                <p class="header">Generate questions at random to spark interesting conversation.</p>
+                <!--
                   <ul>
                     <li>Take turns answering a randomly generated question</li>
                     <li>Actually listen to each other before the next person answers</li>
@@ -12,9 +13,10 @@
                     <li>Break the Ice</li>
                     <li>Practice the art of listening as well as speaking</li>
                   </ul>
-                <p>Take a quick glance at the app during awkward social situations, first dates, or if you just plain lack the wit to think of anything interesting on your own :)</p>
+                -->
+                <p>Although this app is pretty basic, it can create quality conversion. It was developed with the intention to break the ice and have fun with in social situations. There are no rules, but it tends to work best if each person gets an uninteruppted chance to respond to the question before the next person answers. Obviously, use it however you'd like. <b>Enjoy!</b></p>
                 <div class="category-chooser category-chooser__main">
-                  <p>Current category:
+                  <p>Choose a category:
                       <select @change="changeCategory()" v-model="state.chosenCategory">
                           {{state.currentCategory}}
                           <option v-for="category in content.categories">
@@ -34,7 +36,7 @@
               <div class="question">
                 <p>{{ state.singleQuestion }}</p>
               </div>
-              <button class="btn btn-primary" @click="nextQuestion()">Generate Question</button>
+              <button class="btn btn-primary btn-pimary__secondary" @click="nextQuestion()">Generate Question</button>
               <div class="category-chooser">
                 <p>Current category:
                     <select @change="changeCategory()" v-model="state.chosenCategory">
@@ -71,12 +73,12 @@ export default {
                 'questions': [],
                 'categorized': [],
                 'singleQuestion': '',
-                'chosenCategory': 'all',
+                'chosenCategory': 'random',
                 'changedCategory': 'Change Category',
                 'currentCategory': ''
             },
             'content': {
-                'categories': ['all', 'icebreaker', 'deep', 'hypothetical', 'relationships']
+                'categories': ['random', 'icebreakers / groups', 'hypothetical / thought provoking']
             }
         }
     },
@@ -102,8 +104,9 @@ export default {
         }
     },
     'methods': {
+        // TODO: remove duplicate function
         'startGame': function () {
-            if (this.state.chosenCategory === 'all') {
+            if (this.state.chosenCategory === 'random') {
                 this.state.categorized = this.state.questions
             } else {
                 this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
@@ -113,7 +116,7 @@ export default {
             this.state.showSplash = false
         },
         'changeCategory': function () {
-            if (this.state.chosenCategory === 'all') {
+            if (this.state.chosenCategory === 'random') {
                 this.state.categorized = this.state.questions
             } else {
                 this.state.categorized = _.filter(this.state.questions, { 'category': this.state.chosenCategory })
@@ -146,8 +149,14 @@ html {
 }
 
 body {
-    background-color: #F9CA00;
-    color: #b2afac;
+  background: rgba(255,235,10,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,235,10,1) 0%, rgba(247,185,0,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,235,10,1)), color-stop(100%, rgba(247,185,0,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,235,10,1) 0%, rgba(247,185,0,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,235,10,1) 0%, rgba(247,185,0,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,235,10,1) 0%, rgba(247,185,0,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(255,235,10,1) 0%, rgba(247,185,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeb0a', endColorstr='#f7b900', GradientType=1 );
     font-size: 62.5%;
 }
 
@@ -194,6 +203,12 @@ p {
     color: black;
 }
 
+p.header {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #444;
+}
+
 select  {
   font-weight: bold;
   color: #6BAB03;
@@ -205,25 +220,29 @@ select  {
 }
 
 .question {
-  min-height: 90px;
+  position: absolute;
+  width: 67em;
+  padding-right: 61px;
+  padding-left: 12px;
   p {
     color: black;
     font-size: 1.9rem;
+    padding-top: 12px;
     font-weight: bold;
   }
 }
 .category-chooser {
   position: absolute;
   width: 100%;
-  margin-left: 8px;
-  margin-top: 35px;
+  margin-top: 21.5em;
+  margin-left: 4.3em;
   p {
     color: #444;
     text-transform: uppercase;
     font-size: .88rem;
     position: absolute;
     top: 87px;
-    left: 12px;
+    left: 16px;
   }
 }
 
@@ -231,7 +250,7 @@ select  {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 96vh;
 }
 
 .flex-main {
@@ -247,11 +266,9 @@ select  {
 }
 
 .content-wrapper {
-  margin-top: 159px;
-  width: 41rem;
+  width: 46rem;
   margin: auto;
-  padding-top: 10rem;
-  padding-right: 5rem;
+  padding-top: 9rem;
   max-height: 328px;
 }
 
@@ -260,8 +277,8 @@ select  {
 }
 
 .category-chooser__main {
-  margin-top: -61px;
-  margin-left: 30px;
+  margin-top: -28px;
+  margin-left: 24px;
 }
 
 
@@ -278,6 +295,13 @@ select  {
 .btn-primary__main {
   border: 2px solid #0BBCDF;
 }
+
+.btn-pimary__secondary {
+  position: absolute;
+  top: 45%;
+  margin-left: -172px;
+}
+
 
 .btn-primary:hover,
 .btn-pimary:active,
@@ -315,15 +339,16 @@ select.category {
   display: flex;
   justify-content: flex-end;
   button {
-    margin-top: 1.3em;
+    margin-top: 3.4em;
     padding: .5em 2em;
     font-size: 1.5em;
   }
 }
 
 .instruction-dialog {
-  width: 44rem;
+  width: 43.4rem;
   padding: 9rem 7rem 7rem 0;
+  text-align: center;
   p {
     color: black;
   }
@@ -344,8 +369,8 @@ form.category {
 
 .back-to-intro {
   position: absolute;
-  margin-left: 730px;
-  padding-top: 2px;
+  margin-left: 76.4em;
+  padding-top: 18.4em;
   a {
     font-weight: bold;
     font-size: 1.3em;
