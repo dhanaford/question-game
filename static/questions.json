@@ -1,1398 +1,1370 @@
 [
   {
-    "body": "What kind of music do you listen to",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What work would you do if you had enough money to not have to work?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "what takes most of your time in your everyday life?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "If you were to write a book, what would it be about?",
-    "category": "deep"
-  },
-  {
-    "body": "Describe your best friend",
-    "category": "icebreaker"
-  },
-  {
     "body": "If you had the option, would you rather be a bird or a fish?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "How do you define success?",
-    "category": "deep"
-  },
-  {
-    "body": "What should I know about you that I’d never think to ask about?",
-    "category": "relationships"
-  },
-  {
-    "body": "What is you ideal date",
-    "category": "relationships"
-  },
-  {
-    "body": "Do you think there is an afterlife",
-    "category": "deep"
-  },
-  {
-    "body": "what are your flaws?",
-    "category": "relationships"
-  },
-  {
-    "body": "How Would You Survive A Zombie Apocalypse?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "What’s Your Favorite Holiday And Why?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "If You Were On Death Row, What Would Your Final Meal Be?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "If You Could Use Technology To Do One Thing, What Would It Be?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "What’s The Craziest Thing You’ve Ever Done?'",
-    "category": "icebreaker"
-  },
-  {
-    "body": "If You Had A Week To Live, How Would You Live It?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What Are You Most Grateful For?",
-    "category": "deep"
-  },
-  {
-    "body": "Do you have any deal-breakers in terms of relationships?",
-    "category": "relationships"
-  },
-  {
-    "body": "What are your secret skills",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What was your worst job",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What have you learned from your past relationship",
-    "category": "relationship"
-  },
-  {
-    "body": "Who is your best friend",
-    "category": "icebreaker"
-  },
-  {
-    "body": "How Do You Want To Be Remembered?",
-    "category": "deep"
-  },
-  {
-    "body": "What’s Your Greatest Failure, And How Did You Overcome It?",
-    "category": "deep"
-  },
-  {
-    "body": "What Is “Home” To You?",
-    "category": "deeep"
-  },
-  {
-    "body": "Would You Rather Explore A New Planet, Or The Deepest Parts Of The Ocean? Why?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "What’s Your Greatest Achievement And How Has It Shaped You?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "If You Could Have One Superpower, What Would It Be And How Would You Use It?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "If You Could Time Travel, Would You Go To The Past Or The Future?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "Would You Rather Be A Jack Of Many Trades Or A Master Of One?",
-    "category": "hypothetical"
-  },
-  {
-    "body": "What Makes You Happiest?",
-    "category": "relationships"
-  },
-  {
-    "body": "In what ways to you hold yourself back",
-    "category": "deep"
-  },
-  {
-    "body": "What are you looking for",
-    "category": "deep"
-  },
-  {
-    "body": "What are your quirks",
-    "category": "relationships"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "what is something you would \"do over\" in life",
-    "category": "deep"
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "what do you feel most proud of",
-    "category": "icebreaker"
-  },
-  {
-    "body": "what is your most defining moment in life",
-    "category": "icebreaker"
+    "body": "what is your most defining moment in your life",
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you won the lottery what would you do",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "What are you most afraid of",
-    "category": "icebreaker"
+    "body": "What are you most afraid of?",
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "What is your strongest personality quality",
-    "category": "relationships"
+    "body": "What is your strongest personality quality?",
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "What is a skill you'd like to learn and why",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What is the most perfect day to you",
-    "category": "relationships"
-  },
-  {
-    "body": "What is the weirdest scar you have and how did you get it",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What is your favorite attribute about yourself",
-    "category": "relationships"
-  },
-  {
-    "body": "What drives you to do what you do. What is your motivation",
-    "category": "deep"
+    "body": "What drives you to do what you do. What is your motivation?",
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What did you love most about the place you grew up? What about it did you love the least?",
-    "category": "deep"
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "What kind of music do you listen to?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What work would you do if you had enough money to not have to work?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "what takes most of your time in your everyday life?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "Describe your best friend?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "How Would You Survive A Zombie Apocalypse?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What’s Your Favorite Holiday And Why?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What’s The Craziest Thing You’ve Ever Done?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What Are You Most Grateful For?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What are your secret skills?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What was your worst job?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "Who is your best friend?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "what do you feel most proud of?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What is a skill you'd like to learn and why?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What is the weirdest scar you have and how did you get it?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "Tell me the 3 best things about you.",
-    "category": "relationships"
+    "category": "icebreakers / groups"
   },
   {
     "body": "On a scale of 1-10, how strict are/were your parents?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What should I know about you that I’d never think to ask about?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What is you ideal date?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "what do you consider your flaws?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "Do you have any deal-breakers in terms of relationship builders?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What have you learned from your past relationship",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What Makes You Happiest?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "In what ways to you hold yourself back",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What you you looking for?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What are your quirks?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What is the most perfect day to you?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "What is your favorite attribute about yourself?",
+    "category": "icebreakers / groups"
+  },
+  {
+    "body": "Do you think there is an afterlife?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If you were to write a book, what would it be about?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "How do you define success?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If You Were On Death Row, What Would Your Final Meal Be?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If You Could Use Technology To Do One Thing, What Would It Be?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If You Had A Week To Live, How Would You Live It?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "How Do You Want To Be Remembered?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "What’s Your Greatest Failure, And How Did You Overcome It?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "What Is “Home” To You?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "Would You Rather Explore A New Planet, Or The Deepest Parts Of The Ocean? Why?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "What’s Your Greatest Achievement And How Has It Shaped You?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If You Could Have One Superpower, What Would It Be And How Would You Use It?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "If You Could Time Travel, Would You Go To The Past Or The Future?",
+    "category": "hypothetical / thought provoking"
+  },
+  {
+    "body": "Would You Rather Be A Jack Of Many Trades Or A Master Of One?",
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Who was your worst teacher? Why?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who was your favorite teacher? Why?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which would you pick: being world-class attractive, a genius or famous for doing something great?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "Who are the 3 greatest living musicians?",
-    "category": "icebreaker"
+    "body": "In your opinion, who are the three greatest living musicians?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could change one thing about yourself, what would it be?",
-    "category": "relationships"
+    "category": "icebreakers / groups"
   },
   {
     "body": "What was your favorite toy growing up?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "Name 3 celebrities you most admire.",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "Name a celebrity you think is lame.",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "What accomplishment are you most proud of?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which of your friends are you proudest of? Why?",
-    "category": "icebreaker"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s the most beautiful place you’ve ever been?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are your 3 favorite movies?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
-    "body": "How would you describe me to your friends?",
-    "category": "relationships"
+    "body": "How would your friends describe you?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which historical figure would you like to be?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s the right age to get married?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Tell me 3 things you remember about kindergarten.",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "What paper that you’ve written are you most proud of?",
-    "category": "icebreaker"
+    "category": "icebreakers / groups"
   },
   {
     "body": "What would you do if you were invisible for a day?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Who would you like to live like for a day?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could time travel, where would you go?",
-    "category": "hypothetical"
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could live in any TV home, what would it be?",
-    "category": "icebreaker"
-  },
-  {
-    "body": "What’s your favorite ice cream flavor?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Would you rather live for a week in the past or the future?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s your most embarrassing childhood memory?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your best childhood memory?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your favorite holiday?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could eat only 3 foods for the rest of your life, what would they be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could be a cartoon character for a week, who would you be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could have dinner with anyone from history, who would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s one choice you really regret?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s your favorite childhood book?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s a great book you’ve read recently?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you feel like a leader or a follower?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "If you could ask your pet 3 questions, what would they be?",
-    "category": ""
+    "body": "If you could ask your pet three questions, what would they be?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the most courageous thing you’ve ever done?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Who would play you in a movie of your life?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could be an Olympic athlete, in what sport would you compete?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had to live in a different state, what would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What living person, other than family members, do you most admire?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What has been your favorite family vacation?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could choose your own nickname, what would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who is the funniest person you know?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your favorite thing about one of your grandparents?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "Tell the person to your right your favorite thing about them.",
-    "category": ""
+    "body": "Tell your partner your favorite thing about them.",
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you ever talk to yourself? When and what do you say?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When you’re having a bad day, what do you do to make yourself feel better?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which TV family is most like your own?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your favorite smell in the whole world?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you think is the greatest invention of all time?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Using one word, how would you describe your family?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would you rather win an Olympic medal, an Academy Award or the Nobel Peace prize?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s your favorite time of day?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your favorite season?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the one food you could never bring yourself to eat?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the sound you love the most?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What 3 famous people, living or dead, would you want at your fantasy dinner party?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could ask the President one question, what would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could pick a new first name, what would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you had to leave earth on a spaceship and take 4 friends with you, who would they be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is your favorite movie quote?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your pet peeve(s)?",
-    "category": ""
-  },
-  {
-    "body": "Do you sleep with your sheets tucked in or out?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you ever count your steps when you walk?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your favorite kind of sandwich?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your dream job?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Cake or pie?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who is the kindest person you know?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
-    "body": "What’s the best part about having siblings?",
-    "category": ""
+    "body": "What’s the best part about having siblings? (apologies to only children)",
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the scariest movie you’ve ever seen?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could travel anywhere in the world, where would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your favorite family tradition?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who’s your celebrity crush?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What trait do you like the most about yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you good at?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What fictional character do you wish you could meet?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could be great at one sport which would you choose?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the first thing you do when you get home from a trip?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would you rather spend five days exploring Disney or New York City?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Whose parents do/did you wish you had?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could shop for free at one store, which one would you choose?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What personal trait has gotten you in the most trouble?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which celebrity chef would you most like to fix you a meal?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Who is your favorite athlete?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the best piece of advice you’ve received?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had to pick a new name for yourself, what name would you pick?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Would you rather be the most popular kid in school or the smartest kid in school?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What do you like to do on a rainy day?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would you rather be the best player on a horrible team or the worst player on a great team?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is your favorite thing about the beach?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could be anywhere else right now, where would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is your favorite Disney movie?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which of the Seven Dwarfs is most like you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If someone made a movie of your life would it be a drama, a comedy, a romantic-comedy, action film, or science fiction?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Name a product or service you love so much that you’d happily be that company’s spokesperson.",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you were guaranteed to be successful in a different profession, what would you want to do?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "As a child, what did you wish to become when you grew up?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the worst thing you did as a kid?",
-    "category": ""
-  },
-  {
-    "body": "What is the best part of being a part of your family?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your favorite day of the week?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the toughest decision you ever made?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What have you forgotten?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you were guaranteed the answer to one question, what would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s it like being you right now?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What makes you nostalgic?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had two hours left on earth what would you do?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What’s the most beautiful word in the world?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who makes you laugh more than anyone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What did your father teach you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What did your mother teach you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the best gift you’ve ever given?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "Best gift you ever received?",
-    "category": ""
+    "body": "What the best gift you ever received?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "How many times a day do you look in the mirror?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you bring most to a friendship?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If 100 people in your age group were selected randomly, how many do you think they’d find leading a happier life than you?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is or was your best subject in school?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What activity do you do that makes you feel most like yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What makes you feel supported?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Whom do you secretly admire?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What time of the day do you feel the most energetic and what do you usually do in those moments?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s something you never leave home without?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s a recurring dream you have?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What makes you feel safe?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the best thing that ever happened to you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you want people to say about you once you’re gone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the coolest thing about science?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the best money you ever spent?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s a bad habit you have?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you grateful for?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Whom are you envious of?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s an image you’ll never forget?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "Describe a near-death experience.",
-    "category": ""
+    "body": "Describe the closest you think you have come to death.",
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had a clone, what would you have the clone do?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your idea of Heaven?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your idea Hell?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When did you know?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What can you do better?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When are you most yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What superpower would you most like to have?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you were granted three wishes, what would you do with the second wish?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your actual superpower?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you won 100 million dollars, what would you buy first?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What's the best sound in the world?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s perfect about your life?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What song do you sing only when you’re alone and what memory does it bring back?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Describe a moment you were so embarrassed you wanted to disappear.",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "How many times a day do you think about money?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who has been the biggest influence on you in your relationship to money?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What's one thing you're certain of?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Describe one of your colossal failures.",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What makes you cringe?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What does your inner voice tell you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What crime have you considered committing?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What's great about your mom?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s great about your dad?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which day would you gladly re-live?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you awesome at?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you want people you meet for the first time to think about you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When were you most afraid?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you terrible at but love to do anyway?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What weapon would you carry during the Zombie Apocalypse?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which of your five senses would you keep if you could only keep one?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s something you love to make?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you cook better than anyone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you wish you’d invented?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What would you like to invent?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Out of 100 random people, where would you rank yourself in terms of your intelligence?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Where do you want to be right now?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could be someone else for a day who would it be and why?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What makes you feel powerful?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the meanest thing you’ve ever said?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the meanest thing someone has ever said to you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What three words would you have on your grave stone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your first thought when you wake up?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s one thing you wake up to in the middle of the night worrying about?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could tell someone something anonymously, what would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Whom would you like to forgive and forget?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you could get rid of one of your responsibilities today, what would it be?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What type of person angers you the most?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your greatest strength?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your worst weakness?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "How do you show your love for others?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Why are you here in this room right now?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When is a time you forgave someone or were forgiven for something?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the biggest mistake you ever made?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you hiding?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s your unanswerable question--the question you seem to always be asking yourself?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What are you ashamed of?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is stopping you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s a secret you have?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "How do you secretly manipulate people to get your way?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When was the last time you apologized?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the biggest lie you tell yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What’s the moment you left childhood behind?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What's missing from your life?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you believe in a higher power?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you ready to let go of?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you not saying right now?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If a close family member or friend got extremely ill, how would you handle the situation?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you had one day left in this world, how would you spend it?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is your favorite disney movie?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the worst thing someone has ever done to you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who named you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Were you named after someone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When was the last time you were sad and why were you sad?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Given a chance, would you bungee jump?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you love for breakfast?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the first thing you notice about people?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the least favorite thing about yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you miss someone a lot right now? Who is it?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which is your most recent favorite song?",
-    "category": ""
-  },
-  {
-    "body": "Good Questions to get to know someone much more",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who was the last person you talked to on the phone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which are the favorite sports you watch on TV?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you prefer blondes or brunettes and why?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which are your 3 most loved food items?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which was the last movie you watched and liked?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which was the last movie you watched and didn't like at all?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you like summer or winter more and why?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you like reading books or comics?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What did you watch on TV last night?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which is the favorite sound you like to hear?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Which genre of movies do you like most and why?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the farthest you have been from home?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you have any special talents?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Do you have any pets?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What was the last book you read?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are the things that stand between you and complete happiness?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What will people say at your funeral?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Standing at the gates of heaven, and God asks you “Why should I let you in?” What do you reply?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you lost everything tomorrow, whose arms would you run into to make everything ok?",
-    "category": ""
-  },
-  {
-    "body": "Does this person know how much they mean to you? When was the last time you told them?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could send a message to the entire world, what would you say in 30 seconds?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you received enough money to never need to work again, what would you spend your time doing?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If today was the last day of your life, what would you want to do?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What would you change about your life if you knew you would never die?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If your entire life was a movie, what title would best fit?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "How would you describe yourself in 5 words?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are the chances you’ve passed up on that you regret?",
-    "category": ""
-  },
-  {
-    "body": "How do you apply the learning from this regret to your actions today?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What would you do differently if you knew that no one was judging you?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could watch everything that happened in your life until now, would you enjoy it?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could ask a single person one question, and they had to answer truthfully, who and what would you ask?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could start over, what would you do differently?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "When you’re 90 years old, what will matter most to you in the world?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Are you holding onto something that you need to let go of? What’s stopping you?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would you break the law to save a loved one?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Do you ask enough questions, or are you happily settling for what you know already?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "How do you celebrate the things you do have in your life?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When it’s all said and done, will you have said more than you have done?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "When was the last time you tried something new?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What were you doing when you last lost track of the time?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the difference between living and existing?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had a friend that you spoke to the same way you speak to yourself, how long do you think that person would allow you to be your friend?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you had to teach someone one thing, what would you teach?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What makes you smile?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What drives you to do better at something?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you really love to do? Do you do it often? If you answer no, why not?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What can you do today that you couldn’t do a year ago? What will you be able to do at this time next year?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is the last thing that you’ve done that’s really worth remembering?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What gets you excited and driven to achieve?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When was the last time you travelled somewhere new?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What do you want most out of life?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If karma was coming back to you, would it help or hurt you?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could go back in time, once, and change a single thing – what would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you had a year left to live, what would you achieve over the next 12 months?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "If you could ask for one wish, what would it be?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What do you “owe” yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When you think of your home, what immediately comes to mind?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "How do you spend the majority of your free time? Why?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What did you want to be when you were a kid?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What have you done to pursue your dreams lately? How about today?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What terrifies you the most?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What are you looking forward to?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "Describe the greatest adventure of your life",
-    "category": ""
+    "body": "Describe the greatest adventure of your life.",
+    "category": "icebreakers / groups"
   },
   {
     "body": "Where would you like to live? Why haven’t you moved?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What have you done that you’re most proud to have achieved?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you dropped everything to pursue your dreams, what would you be risking?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is your greatest strength?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What is your greatest weakness?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What did your life teach you yesterday?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What have you done today to make someone’s life better?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Whose life have you had the greatest impact on?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "What makes you special?",
-    "category": ""
+    "body": "What makes you think you are so special?",
+    "category": "icebreakers / groups"
   },
   {
     "body": "How many people do you truly love? What are you doing for them?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What bad habits do you want to break?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When did you not speak up, when you know you really should have?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
-    "body": "Describe the next five years of your life, and your plans, in a single sentence",
-    "category": ""
+    "body": "Describe the next five years of your life, and your plans, in a single sentence.",
+    "category": "icebreakers / groups"
   },
   {
     "body": "If you spend a day watching movies when you should be working a day wasted or well spent?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would your life be better or worse, if you knew the time and place where you would die?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What is honor, and does it even matter anymore?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Would you be a martyr and risk your reputation by standing up for what is right in front of your peers? Or is it better to be pragmatic and do nothing?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Could you be persuaded to kill someone? If you answer no, how much money would it take to change your mind?”",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "What would happen if you never wasted another minute of your life, what would that look like?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Would you rather have 10 years of excellent health, or 30 years of average health?",
-    "category": ""
-  },
-  {
-    "body": "Is being open-minded a virtue, if it’s causing destructive ideas to spread throughout society?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   },
   {
     "body": "Do you consider yourself the hero or the villain in your story?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "How much control do you really have over yourself?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "When did you last push the boundaries of your comfort zone?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "What have you given up on?",
-    "category": ""
+    "category": "icebreakers / groups"
   },
   {
     "body": "Who are you really? Describe yourself without using your name, or any attributes given to you by society and really think. Deep down, who are you?",
-    "category": ""
+    "category": "hypothetical / thought provoking"
   }
 ]
