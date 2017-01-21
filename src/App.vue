@@ -85,7 +85,7 @@ export default {
     'events': {
         'hook:ready': function () {
             this.$http.get('//converstion-generator-questions.s3-website-us-east-1.amazonaws.com/questions.json').then((response) => {
-            this.$http.get('../static/questions.json').then((response) => {
+            // this.$http.get('../static/questions.json').then((response) => {
                 var questions = JSON.parse(response.data)
                 // var questions = response.data
                 var currentIndex = questions.length
